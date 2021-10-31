@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: db85f8a4255862644b3fe74b6f8d31a4
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Duepuntozero Pro Trial
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 0b97f78cc2a1bb84ca66f01296a52fb9, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

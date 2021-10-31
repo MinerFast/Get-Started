@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &2925265357762473599
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2925265357762473597}
+  - component: {fileID: 2925265357762473596}
+  m_Layer: 0
+  m_Name: Sky
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2925265357762473597
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2925265357762473599}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 64.4424, y: 3.2965798, z: 175.68509}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2925265357762473596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2925265357762473599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81b73469e12fc6d46bf5d03cf4f3ffb4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SkyCartoonDay: {fileID: 2100000, guid: 73324b55f67f54c7bbf43204788b8bbe, type: 2}
+  one: {fileID: 4890085278179872738, guid: 23d522133d7e2d04b825ad8b7198eced, type: 2}
+  SkyCartoonNigth: {fileID: 2100000, guid: 3a6db933fef1d4c759bf21220420505f, type: 2}
+  SkyColdNight: {fileID: 2100000, guid: eac2ef371405749e0bd050b4c3272f16, type: 2}
+  SkyColdDay: {fileID: 2100000, guid: 01f4eb1c73693428d923f1520032e7f9, type: 2}
+  Skydusk: {fileID: 2100000, guid: c82a334cf5a5e47978749c210cee72a7, type: 2}
+  SkyEpicDay: {fileID: 2100000, guid: cdbb40e11399e4a17882ada20a1b896a, type: 2}
+  SkyEpicSakuraDay: {fileID: 2100000, guid: fe4e130f9947345a2b213cb5038851a2, type: 2}
+  SkyNightMoon: {fileID: 2100000, guid: 51b74d7bad397457d883c5940f7664d8, type: 2}
+  SkyRainy: {fileID: 2100000, guid: 54fe2f000ad8f424fb63cc3ea0ae2bb2, type: 2}
+  SkySpace: {fileID: 2100000, guid: 13f6e5eed33d84c76979f1ec06b5e48c, type: 2}
