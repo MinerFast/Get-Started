@@ -8,19 +8,20 @@ public class PoliceHelper : MonoBehaviour
     public float Radius = 200;
     GameObject Target;
     CarAIControl _CarController;
+    public WheelCollider[] WColForward;
+    public WheelCollider[] WColBack;
     void Start()
     {
         _CarController = GetComponent<CarAIControl>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void FixedUpdate()
     {
         if (Target)
             return;
 
-       
-        Collider[] colider = Physics.OverlapSphere(transform.position , Radius);
+
+        Collider[] colider = Physics.OverlapSphere(transform.position, Radius);
         foreach (var item in colider)
         {
             if (item.GetComponent<PlayerHelper>())

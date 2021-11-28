@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Police
   - Car
+  - Target
   layers:
   - Default
   - TransparentFX

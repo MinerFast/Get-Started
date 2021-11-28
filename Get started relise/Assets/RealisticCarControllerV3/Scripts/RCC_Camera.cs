@@ -214,32 +214,37 @@ public class RCC_Camera : MonoBehaviour{
 
 	}
 
-	void Update(){
 
+    private void FixedUpdate()
+    {
 		// If it's active, enable the camera. If it's not, disable the camera.
-		if (!isRendering) {
+		if (!isRendering)
+		{
 
-			if(thisCam.gameObject.activeInHierarchy)
-				thisCam.gameObject.SetActive (false);
+			if (thisCam.gameObject.activeInHierarchy)
+				thisCam.gameObject.SetActive(false);
 
 			return;
 
-		} else {
+		}
+		else
+		{
 
-			if(!thisCam.gameObject.activeInHierarchy)
-				thisCam.gameObject.SetActive (true);
+			if (!thisCam.gameObject.activeInHierarchy)
+				thisCam.gameObject.SetActive(true);
 
 		}
 
 		// Early out if we don't have the player vehicle.
-		if (!playerCar || !playerRigid){
+		if (!playerCar || !playerRigid)
+		{
 
 			GetTarget();
 			return;
 
 		}
 
-		Inputs ();
+		Inputs();
 
 		// Speed of the vehicle (smoothed).
 		playerSpeed = Mathf.Lerp(playerSpeed, playerCar.speed, Time.deltaTime * 5f);
@@ -248,11 +253,9 @@ public class RCC_Camera : MonoBehaviour{
 		playerVelocity = playerCar.transform.InverseTransformDirection(playerRigid.velocity);
 
 		// Lerping current field of view to target field of view.
-		thisCam.fieldOfView = Mathf.Lerp (thisCam.fieldOfView, targetFieldOfView, Time.deltaTime * 5f);
-
+		thisCam.fieldOfView = Mathf.Lerp(thisCam.fieldOfView, targetFieldOfView, Time.deltaTime * 5f);
 	}
-
-	void LateUpdate (){
+    void LateUpdate (){
 
 		// Early out if we don't have the player vehicle.
 		if (!playerCar || !playerRigid)
